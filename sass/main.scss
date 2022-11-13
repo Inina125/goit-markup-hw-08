@@ -1,5 +1,6 @@
 @import "./utils/vars";
 @import "./utils/general";
+@import "./components/mobile-menu";
 @import "./components/section";
 @import "./components/header";
 @import "./components/container";
@@ -16,6 +17,9 @@
 @import "./components/order-form";
 @import "./components/portfolio";
 
+$mobile: 479.98px;
+$tablet: 767.98px;
+$desctop: 1199.98px;
 
 
 

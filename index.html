@@ -22,11 +22,20 @@
     <!-- Шапка сайта -->
     <header class="header">
       <div class="container header__container">
+        <button class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+        <img class="mobile-icon" src="./images/menu_24px.svg" alt="Menu" width="24">
+        </button>
         <nav class="navigation">
-          <a class="logo logo_header" href="./index.html"> Web<span class="logo__black">Studio</span> </a>
+          <a class="logo logo_header" href="./index.html">
+            Web<span class="logo__black">Studio</span>
+          </a>
 
           <ul class="navigation__menu">
-            <li><a href="./index.html" class="navigation__link navigation__link--active">Студія</a></li>
+            <li>
+              <a href="./index.html" class="navigation__link navigation__link--active">Студія</a>
+            </li>
             <li><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
             <li><a href="" class="navigation__link">Контакти</a></li>
           </ul>
@@ -58,7 +67,9 @@
         <div class="container">
           <div class="service__wrapper">
             <h1 class="service__title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button order-button" data-modal-open>Замовити послугу</button>
+            <button type="button" class="button order-button" data-modal-open>
+              Замовити послугу
+            </button>
           </div>
         </div>
       </section>
@@ -96,7 +107,9 @@
                 </svg>
               </div>
               <h3 class="features__title">ПЛАНУВАННЯ</h3>
-              <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+              <p class="features__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
             <li class="features__item">
               <div class="features__icons">
@@ -119,6 +132,7 @@
           <ul class="skils__list">
             <li class="skils__item">
               <img src="./images/img-box1.jpg" alt="Десктопні додатки" width="370" />
+
               <div class="skils__overlay">
                 <h3 class="skils__overlay-title">Десктопні додатки</h3>
               </div>
@@ -304,42 +318,42 @@
           <ul class="clients__list">
             <li class="clients__item">
               <a class="clients__svg" href="#">
-                <svg class="clients__icon-logo" width="106" height="60">
+                <svg class="clients__icon-logo" width="" height="">
                   <use href="./images/icons.svg#icon-Logo1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__svg" href="#">
-                <svg class="clients__icon-logo" width="106" height="60">
+                <svg class="clients__icon-logo" width="" height="">
                   <use href="./images/icons.svg#icon-Logo2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__svg" href="#">
-                <svg class="clients__icon-logo" width="106" height="60">
+                <svg class="clients__icon-logo" width="" height="">
                   <use href="./images/icons.svg#icon-Object3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__svg" href="#">
-                <svg class="clients__icon-logo" width="106" height="60">
+                <svg class="clients__icon-logo" width="" height="">
                   <use href="./images/icons.svg#icon-Logo3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__svg" href="#">
-                <svg class="clients__icon-logo" width="106" height="60">
+                <svg class="clients__icon-logo" width="" height="">
                   <use href="./images/icons.svg#icon-group5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__svg" href="#">
-                <svg class="clients__icon-logo" width="106" height="60">
+                <svg class="clients__icon-logo" width="" height="">
                   <use href="./images/icons.svg#icon-Object6"></use>
                 </svg>
               </a>
@@ -352,7 +366,9 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__main">
-          <a class="logo footer__logo" href="./index.html"> Web<span class="logo__white">Studio</span> </a>
+          <a class="logo footer__logo" href="./index.html">
+            Web<span class="logo__white">Studio</span>
+          </a>
           <address>
             <ul class="footer__address-list">
               <li class="footer__address-item">
@@ -361,7 +377,9 @@
                 </a>
               </li>
               <li class="footer__address-item">
-                <a href="mailto:info@devstudio.com" class="footer__contact-link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="footer__contact-link"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="footer__address-item">
                 <a href="tel:+380961111111" class="footer__contact-link">+38 096 111 11 11</a>
@@ -421,7 +439,8 @@
     <div class="modal__backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn" data-modal-close>
-          <svg class="modal__btn-icon"
+          <svg
+            class="modal__btn-icon"
             width="11"
             height="11"
             viewBox="0 0 11 11"
@@ -460,7 +479,12 @@
             </div>
             <div class="order-form__group">
               <label class="order-form__label" for="coment">Коментар</label>
-              <textarea class="order-form__text" name="coment" id="coment" placeholder="Введіть текст"></textarea>
+              <textarea
+                class="order-form__text"
+                name="coment"
+                id="coment"
+                placeholder="Введіть текст"
+              ></textarea>
             </div>
 
             <div class="order-form__group">
@@ -475,7 +499,9 @@
                 <svg class="order-form__checkbox-icon" width="16" height="15">
                   <use href="./images/icons.svg#checkbox"></use>
                 </svg>
-                Погоджуюся з розсилкою та приймаю<a class="order-form__link" href="">Умови договору</a>
+                Погоджуюся з розсилкою та приймаю<a class="order-form__link" href=""
+                  >Умови договору</a
+                >
               </label>
             </div>
 
@@ -484,6 +510,6 @@
         </div>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
