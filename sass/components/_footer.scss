@@ -1,0 +1,119 @@
+.footer {
+  background-color: #2f303a;
+}
+
+.footer__container {
+  padding: 60px 0;
+  display: flex;
+}
+.footer__title {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.footer__social {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer__icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #2196f3;
+  }
+}
+
+.footer__icon-logo {
+  fill: currentColor;
+}
+
+.footer__icon {
+  margin-right: 10px;
+}
+.footer__block {
+  margin-left: 70px;
+  width: 210px;
+  margin-left: 70px;
+  margin-top: 12px;
+}
+.footer__logo {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer__main {
+  min-width: 240px;
+}
+.footer__address-link {
+  color: var(--primary-white-color);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.17;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.footer__contact-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.17;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__address-item {
+  margin-bottom: 9px;
+
+&:last-child {
+  margin-bottom: 0;
+}
+}
+
+
+.footer__subscribe {
+  margin: 12px 0 0 93px;
+}
+.footer__form-subscribe {
+  margin-top: 20px;
+  display: flex;
+}
+
+.footer__icon-telegram {
+  margin-left: 10px;
+  fill: #ffffff;
+}
+.footer__form-field {
+  background-color: #2f303a;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  line-height: 50px;
+  padding: 15px 16px;
+}

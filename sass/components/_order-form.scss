@@ -1,0 +1,104 @@
+.order-form {
+  margin: 0 auto;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.order-form__group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 10px;
+}
+.order-form__icon {
+  fill: #212121;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+.order-form__label {
+  color: #757575;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+.order-form__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  padding: 0 15px 0 42px;
+  outline: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border: 1px solid #2196f3;
+    outline-color: transparent;
+  }
+}
+.order-form__text {
+  height: 120px;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border: 1px solid #2196f3;
+    outline-color: transparent;
+  }
+}
+.order-form__input:focus + .order-form__icon {
+  fill: #2196f3;
+}
+
+
+.order-form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  bottom: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.order-form__checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.order-form__checkbox-icon {
+  fill: transparent;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  user-select: none;
+  margin-right: 8px;
+}
+
+.order-form__checkbox:checked + .order-form__checkbox-label > .order-form__checkbox-icon {
+  border: none;
+  fill: #2196f3;
+}
+
+.order-form__link {
+  color: #2196f3;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-left: 5px;
+}
