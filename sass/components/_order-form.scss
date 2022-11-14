@@ -75,10 +75,15 @@
   align-items: center;
   margin-left: 12px;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+  white-space: nowrap;
+
+  @media screen and (min-width: $desktop) {
+    font-size:14px;
+  }
 }
 
 .order-form__checkbox-icon {
@@ -97,8 +102,12 @@
 .order-form__link {
   color: #2196f3;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-left: 5px;
+
+  @media screen and (min-width: $desktop) {
+    font-size:14px;
+  }
 }

@@ -58,11 +58,14 @@
 }
 .service__wrapper {
   display: flex;
-  width: 696px;
   flex-direction: column;
   align-items: center;
-  max-width: 696px;
+  width: 100%;
+  max-width: 446px;
 
+  @media screen and (min-width: $desktop) {
+    max-width: 696px;
+  }
 }
 .service__title {
   color: var(--primary-white-color);
