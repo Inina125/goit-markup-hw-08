@@ -1,6 +1,10 @@
 .navigation {
-  display: flex;
+  display: none;
   align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 .navigation__menu {
   display: flex;

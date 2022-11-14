@@ -1,6 +1,5 @@
 .clients__title {
   color: #212121;
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -8,11 +7,25 @@
 }
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap:30px;
+}
+
+.clients__item {
+  width:calc((100% - 30px) / 2);
+
+  @media screen and (min-width: $tablet) {
+    width:calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width:auto;
+    max-width: 170px;
+  }
 }
 
 .clients__svg {
-  width: 170px;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -35,4 +48,5 @@
 
 .clients__icon-logo {
   fill: currentColor;
+  height: 100%;
 }

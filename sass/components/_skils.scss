@@ -1,5 +1,10 @@
 .skils__section {
   padding-top: 0;
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .skils__title {

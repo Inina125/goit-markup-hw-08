@@ -8,7 +8,11 @@
 }
 
 .logo_header {
-  margin-right: 93px;
+  margin-right: 88px;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 
 .logo__black {

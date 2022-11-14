@@ -1,14 +1,22 @@
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .section__title--hidden {
