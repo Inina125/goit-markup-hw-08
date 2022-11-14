@@ -76,22 +76,21 @@
   margin-left: 12px;
   margin-top: 10px;
   font-size: 12px;
-  line-height: 1.7;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: #757575;
-  white-space: nowrap;
 
   @media screen and (min-width: $desktop) {
     font-size:14px;
   }
 }
-
 .order-form__checkbox-icon {
   fill: transparent;
   border: 2px solid #212121;
   border-radius: 3px;
   user-select: none;
   margin-right: 8px;
+  min-width: 16px;
 }
 
 .order-form__checkbox:checked + .order-form__checkbox-label > .order-form__checkbox-icon {
